@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <!-- <link rel="stylesheet" href="RegistrationForm.css"> -->
+
+    <style>
+        body {
+            background-color: antiquewhite;
+            text-align: center;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d0e4f7+0,0a77d5+0,539fe1+42,87bcea+75,87bcea+91 */
+            background: rgb(208, 228, 247);
+            /* Old browsers */
+            background: -moz-linear-gradient(45deg, rgba(208, 228, 247, 1) 0%, rgba(10, 119, 213, 1) 0%, rgba(83, 159, 225, 1) 42%, rgba(135, 188, 234, 1) 75%, rgba(135, 188, 234, 1) 91%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, rgba(208, 228, 247, 1) 0%, rgba(10, 119, 213, 1) 0%, rgba(83, 159, 225, 1) 42%, rgba(135, 188, 234, 1) 75%, rgba(135, 188, 234, 1) 91%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, rgba(208, 228, 247, 1) 0%, rgba(10, 119, 213, 1) 0%, rgba(83, 159, 225, 1) 42%, rgba(135, 188, 234, 1) 75%, rgba(135, 188, 234, 1) 91%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0e4f7', endColorstr='#87bcea', GradientType=1);
+            /* IE6-9 fallback on horizontal gradient */
+        }
+    </style>
+
+<script>
+    function check()
+    {
+    var fname = document.getElementById("Fname").value;
+    if(fname == null || fname == "")
+    {
+        alert("First name cannot be empty.null")
+    }
+    var lname = document.getElementById("Lname").value;
+   if(lname == null || lname == "")
+    {
+        alert("Last name cannot be empty.")
+    }
+    var pswd = document.getElementById("Pswd").value;
+    if(pswd == null || pswd == "")
+    {
+        alert("please enter the password.")
+    }
+   if(pswd.length<6 || pswd.length>15)
+    {
+        alert("password must contain characters between 6 to 15.")
+    }
+}
+</script>
+
+
+</head>
+
+<body>
+    <form action="" method="GET">
+        <h1>REGISTRATION FORM</h1>
+        First Name:<input type="text" id="Fname" placeholder="Enter your first name" >
+        <br><br>
+
+        Last Name:<input type="text" id="Lname" placeholder="Enter your last name" >
+        <br><br>
+
+        E-mail:<input type="email" id="E-mail" placeholder="your E-mail@gmail.com" >
+        <br><br>
+
+        Date of Birth:<input type="date" id="DOB" >
+        <br><br>
+
+        Phone No:<input type="number" id="Ph.no" placeholder="Enter your Phone Number" >
+        <br><br>
+
+        Password:<input type="password" id="Pswd" placeholder="Enter your passsword" >
+        <br><br>
+
+        Confirm Password:<input type="password" id="Con_pswd" placeholder="Confirm Password">
+        <br><br>
+
+        Country:<select name="Country" id="Country" required>
+            <option value="Afghanistan">Afghanistan</option>
+            <option value="bangladesh">bangladesh</option>
+            <option value="China">China</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Egypt">Egypt</option>
+            <option value="Finland">Finland</option>
+            <option value="Greece">Greece</option>
+            <option value="Hawai">Hawai</option>
+            <option value="India">India</option>
+            <option value="Russia">Russia</option>
+        </select>
+        <br><br>
+
+        <label for="address">Residential Address:</label>
+        <br>
+        <textarea id="address" placeholder="Enter Your Address" name="address" cols="30" rows="10" ></textarea>
+        <br><br> 
+        <button style="background-color:green" type="button" onclick="check()">SUBMIT</button>
+        <button style="background-color:yellow" type="reset">RESET</button>
+        <button style="background-color:red" type="reset" >CANCEL</button>
+    </form>
+    <h2>Like/Subscribe us for latest updates or newsletter RSS Feed </h2>
+    <h3>© Copyright 2011-2021 www.Register.com. All rights reserved. Developed by mac.</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis animi a eaque nihil, est ullam sequi magni ipsa
+        sapiente, assumenda quisquam, minm ipsum dolor, sit amet consectetur adipisicing elit. Itaque, hic. aliquid
+        aperiam ratione placeat mollitia eius. Consectetur a quia ex quis eveniet!</p>
+</body>
+
+</html>
